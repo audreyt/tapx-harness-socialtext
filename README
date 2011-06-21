@@ -1,0 +1,29 @@
+NAME
+    TAPx::Harness::Socialtext - ST extended TAP::Harness
+
+SYNOPSIS
+      prove --harness TAPx::Harness::Socialtext ...
+
+DESCRIPTION
+    "TAPx::Harness::Socialtext" extends "TAP::Harness", adding in some extra
+    callbacks and setup that's useful for Socialtext:
+
+    *   Expose "HARNESS_JOB_NUMBER" into the environment, for parallel test
+        runs
+
+    *   Support for wikiD and wikiQ tests, run via run-wiki-tests.
+
+SEE ALSO
+    TAPx::Harness::Callbacks::JobNumber, TAPx::Harness::Filetype::WikiTests,
+
+AUTHOR
+    Graham TerMarsch (cpan@howlingfrog.com)
+
+COPYRIGHT
+    Copyright (C) 2009-2011, Socialtext, Inc. All Rights Reserved.
+
+LICENSE
+    All the code in this distribution is copyrighted by Socialtext
+    Incorporated, licensed under CPAL; see the LICENSE file in the package
+    for details.
+

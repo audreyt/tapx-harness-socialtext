@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# st-prove
+#
+# Custom "prove" wrapper, which forces the load of our custom harness.
+#
+###############################################################################
+
+prove \
+    --harness TAPx::Harness::Socialtext \
+    --lib \
+    --merge \
+    --state=save \
+    "$@"
